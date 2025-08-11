@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>{{ action }} Room</h2>
+  <form method="post">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">
+      {{ form.room_type.label }}
+      {{ form.room_type(class="form-control") }}
+    </div>
+    <div class="mb-3">
+      {{ form.room_status.label }}
+      {{ form.room_status(class="form-control") }}
+    </div>
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+{% endblock %}
