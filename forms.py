@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField, TextAreaField
 from wtforms.validators import DataRequired
-from wtforms.ext.sqlalchemy.fields import QuerySelectField
+from wtforms.fields import QuerySelectField
 from wtforms.fields import IntegerField
 
 # Guests (already provided earlier)
