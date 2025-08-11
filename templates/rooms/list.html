@@ -4,11 +4,11 @@
   <table class="table">
     <thead><tr><th>ID</th><th>Room Type</th><th>Room Status</th><th>Actions</th></tr></thead>
     <tbody>
-      {% for r in rooms %}
+      {% for r in room %}
         <tr>
-          <td>{{ g.id }}</td>
-          <td>{{ g.room_type }}</td>
-          <td>{{ g.room_status }}</td>
+          <td>{{ r.id }}</td>
+          <td>{{ r.room_type }}</td>
+          <td>{{ r.room_status }}</td>
           <td>
             <a href="{{ url_for('room_edit', id=r.id) }}" class="btn btn-sm btn-outline-secondary">Edit</a>
             <form action="{{ url_for('room_delete', id=r.id) }}" method="post" style="display:inline">
