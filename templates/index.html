@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to Kumbale Lodge Management</h1>
+  <p class="lead">Manage guests, rooms, bookings, services, and staff.</p>
+  <hr class="my-4">
+  <div class="list-group">
+    <a href="{{ url_for('guest_list') }}" class="list-group-item list-group-item-action">Guests</a>
+    <a href="{{ url_for('room_list') }}" class="list-group-item list-group-item-action">Rooms</a>
+    <a href="{{ url_for('booking_list') }}" class="list-group-item list-group-item-action">Bookings</a>
+    <a href="{{ url_for('service_list') }}" class="list-group-item list-group-item-action">Services</a>
+    <a href="{{ url_for('staff_list') }}" class="list-group-item list-group-item-action">Staff</a>
+  </div>
+</div>
+{% endblock %}
